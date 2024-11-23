@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TEST SUMMARIZATION APPLICATION USING BART</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <style>
+        #output {
+            text-align: center;
+            margin-top: 10px;
+        }
+        #summarizeButton {
+            transition: transform 0.3s; /* For animation */
+        }
+        #summarizeButton.loading {
+            transform: scale(0.9); /* Scale down during loading */
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>TEXT SUMMARIZATION APPLICATION USING BART</h1>
+        <textarea id="articleText" placeholder="Enter your article here..."></textarea><br>
+        <button id="summarizeButton">Summarize</button>
+        <div id="timer"></div>
+        <div id="output"></div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
